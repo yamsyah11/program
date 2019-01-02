@@ -1,0 +1,12 @@
+ <?php
+include 'konek_order.php';
+$table_number  =        $_POST['table_number'];
+$item_id   		=        $_POST['item_id'];
+$qyt	         =        $_POST['qyt'];
+$total	      =        $_POST['total'];
+
+
+$sql3 = "insert into order1 (table_number, item_id, qyt, total) VALUES ('$table_number','$item_id','$qyt','$totql')";
+mysqli_query($connect,$sql3);
+header('location:pro.php');
+?>
